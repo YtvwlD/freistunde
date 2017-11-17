@@ -3,6 +3,11 @@
 REMOTE_URL = "https://pub.ytvwld.de/freistunde/" # change later on
 INTERVAL = 15*60 # 15 min
 
+# Copyright © 2017 Niklas Sombert <niklas@ytvwld.de>
+# This work is free. You can redistribute it and/or modify it under the
+# terms of the Do What The Fuck You Want To Public License, Version 2,
+# as published by Sam Hocevar. See the COPYING file for more details.
+
 from socket import getfqdn
 from requests import Session
 import asyncio
