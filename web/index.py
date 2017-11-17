@@ -17,7 +17,7 @@ def application(request):
     if not request.path in ("/", "/index", "/index.py"):
         return Response("Not found.", status=404)
     if request.method == "GET":
-        with open("template.html", "rt") as templ_file:
+        with open("template.html", mode="rt", encoding="utf-8") as templ_file:
             templ = templ_file.read()
         with open("data.json", "rt") as f:
             data = json.load(f)
